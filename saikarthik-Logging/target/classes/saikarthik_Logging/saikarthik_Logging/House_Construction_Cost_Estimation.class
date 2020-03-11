@@ -1,0 +1,22 @@
+Êþº¾   3 h  @saikarthik_Logging/saikarthik_Logging/House_Construction_Cost_Estimation  java/lang/Object s Ljava/util/Scanner; LOGGER !Lorg/apache/logging/log4j/Logger; material_type I area_of_house D <clinit> ()V Code
+    #org/apache/logging/log4j/LogManager   	getLogger 4(Ljava/lang/Class;)Lorg/apache/logging/log4j/Logger;	     LineNumberTable LocalVariableTable <init>
+     this BLsaikarthik_Logging/saikarthik_Logging/House_Construction_Cost_Estimation; costCalculation 
+Exceptions " java/io/IOException $ java/util/Scanner	 & ( ' java/lang/System ) * in Ljava/io/InputStream;
+ # ,  - (Ljava/io/InputStream;)V	  /   1 §Enter your choice from available materials:
+1.Standard material
+2.Above standard material
+3.High standard material
+4. High standard materials and fully automated home
+ 3 5 4 org/apache/logging/log4j/Logger 6 7 info (Ljava/lang/String;)V
+ # 9 : ; nextInt ()I	  = 	 
+ ?  Enter total area of the house : 
+ # A B C 
+nextDouble ()D	  E  @’À     @—p     @œ      @£ˆ      O Invalid material type Q java/lang/StringBuilder S +Total construction cost of the house is Rs.
+ P U  7
+ P W X Y append (D)Ljava/lang/StringBuilder;
+ P [ \ ] toString ()Ljava/lang/String; _ *Exception arised, please enter valid input a java/lang/Exception cost e Ljava/lang/Exception; StackMapTable 
+SourceFile 'House_Construction_Cost_Estimation.java !            	       	 
+                 )      	¸ ³ ±                         /     *· ±           
+                       !   r     ½*» #Y² %· +µ .² 0¹ 2 **´ .¶ 8µ <² >¹ 2 **´ .¶ @µ DH*´ <ª    N            *   6   B F*´ DkH§ 1 H*´ DkH§ % J*´ DkH§  L*´ DkH§ ² N¹ 2 ² » PYR· T'¶ V¶ Z¹ 2 § L² ^¹ 2 ±  8 ® ± `     V         #  -  8  :  \  e  h   q ! t " } # € $ ‰ % Œ & – * ® + ± , ² / ¼ 3         ½     : t b   ² 
+ c d  e    ü \	ÿ     `
+  f    g

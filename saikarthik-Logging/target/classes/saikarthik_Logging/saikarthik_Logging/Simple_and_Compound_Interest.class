@@ -1,0 +1,20 @@
+Êþº¾   3 z  :saikarthik_Logging/saikarthik_Logging/Simple_and_Compound_Interest  java/lang/Object principal_amount D rate_of_interest time_in_years out Ljava/io/BufferedWriter; s Ljava/util/Scanner; LOGGER !Lorg/apache/logging/log4j/Logger; <clinit> ()V Code
+    #org/apache/logging/log4j/LogManager   	getLogger 4(Ljava/lang/Class;)Lorg/apache/logging/log4j/Logger;	     LineNumberTable LocalVariableTable <init>
+     this <Lsaikarthik_Logging/saikarthik_Logging/Simple_and_Compound_Interest; calculateInterest 
+Exceptions $ java/io/IOException & java/util/Scanner	 ( * ) java/lang/System + , in Ljava/io/InputStream;
+ % .  / (Ljava/io/InputStream;)V	  1   3 Enter principal amount :  5 7 6 org/apache/logging/log4j/Logger 8 9 info (Ljava/lang/String;)V
+ % ; < = 
+nextDouble ()D	  ?   A #Enter rate of interest per annum : 	  C   E Enter time in years : 	  G  @Y       K java/lang/StringBuilder M Simple interest = 
+ J O  9
+ J Q R S append (D)Ljava/lang/StringBuilder; U 
+
+ J W R X -(Ljava/lang/String;)Ljava/lang/StringBuilder;
+ J Z [ \ toString ()Ljava/lang/String; ^ <===========================================================
+ ` XTo calculate compound interest enter number of times interest applied per time period : 
+ % b c d nextInt ()I
+ f h g java/lang/Math i j pow (DD)D l Compound interest =  n (Exception arised,please give valid input p java/lang/Exception simple_interest no_interest_applied I final_amount e Ljava/lang/Exception; StackMapTable 
+SourceFile !Simple_and_Compound_Interest.java !                          	 
+         	             )      	¸ ³ ±                         /     *· ±           
+               !   "     #   £     ò*» %Y² '· -µ 0² 2¹ 4 **´ 0¶ :µ >² @¹ 4 **´ 0¶ :µ B² D¹ 4 **´ 0¶ :µ F*´ >*´ Fk*´ Bk HoH² » JYL· N'¶ PT¶ V¶ Y¹ 4 ² ]¹ 4 ² _¹ 4 *´ 0¶ a>*´ >*´ Bdh‡oc‡*´ Fk¸ ek9² » JYk· N*´ >g¶ PT¶ V¶ Y¹ 4 ² ]¹ 4 § L² m¹ 4 ±    ã æ o     N         #  -  8  B  M  `  } ! ‡ $ ‘ & ™ ' ¶ ( Ù ) ã + æ , ç . ñ 0    4    ò      ` ƒ q   ™ J r s  ¶ - t   ç 
+ u v  w   	 ÷ æ o
+  x    y
